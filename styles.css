@@ -1,0 +1,220 @@
+/* Style Sheet for my Home Page 
+October 10, 2024 - last edited 
+Kristen Drabek */
+/* This is my general body which set the width and margin of the page along with the color. */
+body{
+    background-color:#F1CCBB;
+    margin: 0; /* Remove default margin from the body */
+    padding: 0; /* Remove default padding from the body */
+}
+header{
+    text-align: center; /* Center-align all text within the header */
+    font-family:monospace;
+    font-style: normal;
+    padding: 20px 0;
+    background-color: #EFBA97;
+    color:rgb(0, 0, 0);
+}
+
+/* This is my footer for my website with the overall style and font I wanted for my page. */
+footer{
+    font-family:monospace;
+    font-style: normal; 
+}
+/* This is my aside stuff. I wanted the border to be be organized and look nice. */
+aside{
+    font-family:monospace;
+    font-style: normal; 
+
+}
+/* This is my section where I put the main information and introduction to the website.
+I want it to be bold and in your face since it's the first thing you see when you find the webpage. */
+section{
+    font-family:monospace;
+    font-style: normal; 
+    margin-bottom: 40px; /* Space below each section for separation */
+}
+
+.slideshow {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slides {
+    display: flex;
+    width: 500%;
+    height: 400px;
+  }
+  
+  .slides input {
+    display: none;
+  }
+  
+  .slide {
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn {
+    border: 2px solid  #E3826F ;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover {
+    background:  #E3826F ;
+  }
+  
+  #img-1:checked ~ .first {
+    margin-left: 0;
+  }
+
+  #img-5:checked ~ .first {
+    margin-left: 0;
+  }
+
+  #img-9:checked ~ .first {
+        margin-left: 0;
+    }
+
+  #img-13:checked ~ .first {
+        margin-left: 0;
+    }
+
+  #img-2:checked ~ .first {
+    margin-left: -20%;
+  }
+
+  #img-6:checked ~ .first {
+    margin-left: -20%;
+  }
+
+  #img-10:checked ~ .first {
+    margin-left: -20%;
+  }
+
+  #img-14:checked ~ .first {
+    margin-left: -20%;
+  }
+  
+  #img-3:checked ~ .first {
+    margin-left: -40%;
+  }
+
+  #img-7:checked ~ .first {
+    margin-left: -40%;
+  }
+
+  #img-11:checked ~ .first {
+    margin-left: -40%;
+  }
+
+  #img-15:checked ~ .first {
+    margin-left: -40%;
+  }
+
+  #img-4:checked ~ .first {
+    margin-left: -60%;
+  }
+
+  #img-8:checked ~ .first {
+    margin-left: -60%;
+  }
+
+  #img-12:checked ~ .first {
+    margin-left: -60%;
+  }
+
+  #img-16:checked ~ .first {
+    margin-left: -60%;
+  }
+
+  form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Arrange form elements in a column */
+}
+
+/* Styles for form labels */
+form label {
+    margin-top: 10px; /* Space above each label for better readability */
+}
+
+/* Styles for input fields and textareas */
+form input, form textarea {
+    padding: 10px; /* Padding inside input fields and textareas */
+    margin-top: 5px; /* Space above each input field */
+    border: 1px solid #e27959; /* Bright blue border around input fields */
+    border-radius: 4px; /* Slightly rounded corners for input fields */
+    background-color: #E7D5C7; /* Dark background for input fields */
+    color: #605E5F; /* Light text color for input fields */
+    font-size: 1em; /* Font size for input fields */
+}
+
+/* Placeholder text styles for input fields and textareas */
+form input::placeholder, form textarea::placeholder {
+    color: #605E5F; /* Gray color for placeholder text */
+}
+/* Styles for the submit button */
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #EFBA97; /* Dark blue button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em; /* Font size for button */
+}
+
+form button:hover {
+    background-color: #EFBA97; /* Bright blue on hover */
+}
+
+h2{
+    font-family:monospace;
+    font-style: normal; 
+    text-decoration: wavy;
+    text-decoration-line: underline;
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove padding from the list */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline (horizontally) */
+    margin: 0 15px; /* Margin between navigation items */
+}
+/* Styles for navigation links */
+nav ul li a {
+    color: #000000; /* Bright blue color for navigation links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    text-decoration: underline; /* Underline links on hover for visual feedback */
+}

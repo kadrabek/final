@@ -1,0 +1,126 @@
+<!-- This is the basic setup of html -->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head of the page includes the title of the website and the stylesheet link. -->
+    <head>
+        <title> Welcome to Arizona </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <!-- *** -->
+    <!-- Start of the body of the page -->
+    <body>
+
+<!-- Start of the section area that will introduce you to the website. Might put the quick facts here.
+ Haven't decided yet. -->
+<header>
+    <h1> 
+     ~ Welcome to Arizona! ~ 
+    </h1>
+     Arizona is a state that is known for holding the Grand Canyon. Arizona has other features that make it worth checking out.
+     Whether you are looking for a vacation or simply interested in the history of Arizona, you are in the right place.
+     To start you off here are some quick facts about Arizona that I bet you didn't know and if you did then you are one step ahead!
+     <nav> 
+        <ul>
+             <li><a href="#quickfacts">Quick Facts</a></li> <!-- Link to the biography section -->
+             <li><a href="#gallery">Gallery</a></li> <!-- Link to the comics section -->
+            <li><a href="#about">About Us</a></li> <!-- Link to the gallery section -->
+            <li><a href="#contact">Contact Us</a></li> <!-- Link to the contact section -->
+            <li><a href="home.html">Home Page</a></li>
+            <li><a href="view.html">Views Page</a></li>
+            <li><a href="sites.html">Sites Page</a></li>
+        </ul>
+    </nav>
+    
+    </header>
+
+ 
+    <h2> Quick Arizona Facts </h2>         
+    <section id="#quickfacts">
+        <p> First off is the State Flag which is pictured below. The State Flag is an important to any state. </p>
+            <img src="flags.jpeg" style="width:250px;height:250px;"/> 
+        <p> This is the State Flower which is pictured below. It is found on a Saguaro Cactus and is called the Saguaro Cactus Flower. </p>
+            <img src="flower.jpeg" style="width:250px;height:250px;"/> 
+        <p> Arizona became a state on February, 14, 1912 which is also Valentine's Day. </p>
+        <p> Arizona is nicknamed the Grand Canyon State since it is known for having the Grand Canyon which is a big tourist destination. </p>
+    </section>
+<br>
+<br>
+
+<h2> Gallery </h2>
+<!-- My Slideshow  -->
+ <section id="gallery">
+<div class="slideshow">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="img-1" checked>
+      <input type="radio" name="radio-btn" id="img-2">
+      <input type="radio" name="radio-btn" id="img-3">
+      <input type="radio" name="radio-btn" id="img-4">
+  
+      <div class="slide first">
+        <img src="image1.jpeg" alt="Image 1">
+      </div>
+      <div class="slide">
+        <img src="image2.jpeg" alt="Image 2">
+      </div>
+      <div class="slide">
+        <img src="image3.jpeg" alt="Image 3">
+      </div>
+      <div class="slide">
+        <img src="image4.jpeg" alt="Image 4">
+      </div>
+  
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+    </div>
+  
+    <div class="navigation-manual">
+      <label for="img-1" class="manual-btn"></label>
+      <label for="img-2" class="manual-btn"></label>
+      <label for="img-3" class="manual-btn"></label>
+      <label for="img-4" class="manual-btn"></label>
+    </div>
+  </div>
+  </section>
+
+<section id="about">
+<aside> 
+   <h2> About Us </h2>
+   <p> This website was made to give you ideas of where to visit in Arizona if you are visiting here. Arizona can seem like it has nothing to offer other than the Grand Canyon.
+    We made this site to show you what else Arizona has to offer and what you can expect when you visit here. </p>
+</aside>
+</section>
+
+<section id="contact">
+    <h2> Contact Us </h2>
+    <p> If you wish to contact us about further information use the format below. </p>
+    <form>
+        <label for="name">Full Name:</label> <!-- Label for the name input -->
+        <input type="text" id="name" name="name" required placeholder="Your Name"> <!-- Input field for name -->
+        
+        <label for="email">Email:</label> <!-- Label for the email input -->
+        <input type="email" id="email" name="email" required placeholder="Your Email"> <!-- Input field for email -->
+        
+        <label for="message">Message:</label> <!-- Label for the message textarea -->
+        <textarea id="message" name="message" required placeholder="Your Message"></textarea> <!-- Textarea for message -->
+        
+        <button type="submit">Send Message</button> <!-- Submit button for the form -->
+    </form>
+</section>
+
+
+<!-- footer section that holds the copyright for the page.  -->
+<footer> 
+    <p> &copy; 2024 Visit Arizona. All rights reserved. </p>
+</footer>
+
+<!-- End of the body section. -->
+    </body>
+    <!-- *** -->
+     
+    <!-- End of the html document. -->
+</html>
